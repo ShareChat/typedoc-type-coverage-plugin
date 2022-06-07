@@ -1,0 +1,1 @@
+# typedoc-type-coverage-plugin
