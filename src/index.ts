@@ -1,7 +1,7 @@
 import getCoverage, { Options, CoverageData } from "./getCoverage";
 import path from "path";
 import { generateCoverageBadge } from "./generateBadge";
-import { Application, Renderer, RendererEvent } from "typedoc";
+import { Application, ParameterType, Renderer, RendererEvent } from "typedoc";
 import { generate as generateText } from "./reporters/text";
 import { generate as generateHTML } from "./reporters/html";
 import { generate as generateJSON } from "./reporters/json";
@@ -46,12 +46,19 @@ async function generateCoverageReport(
 }
 
 export function load(app: Application) {
+  app.options.addDeclaration({
+    name: "threshold",
+    help: "Minimum type coverage percentage",
+    type: ParameterType.Number,
+    defaultValue: 90,
+  });
+
   app.renderer.on(Renderer.EVENT_END, async (event: RendererEvent) => {
     try {
       let outDir =
         app.options.getValue("out") || path.join(process.cwd(), "doc");
       outDir = path.join(outDir, "type-coverage");
-      const threshold = 0;
+      const threshold = app.options.getValue("threshold") as unknown as number;
       await generateCoverageReport({
         ...app.options,
         outputDir: outDir,
