@@ -1,17 +1,33 @@
 {
-  "name": "typedoc-type-coverage-plugin",
+  "name": "@mohalla-tech/typedoc-type-coverage-plugin",
   "version": "1.0.0",
+  "description": "A plugin for TypeDoc to generate type coverage report and type coverage badge.",
+  "homepage": "https://github.com/ShareChat/typedoc-type-coverage-plugin",
   "main": "dist/index.js",
   "license": "MIT",
+  "files": [
+    "dist",
+    "assets"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShareChat/typedoc-type-coverage-plugin.git"
+  },
+  "keywords": [
+    "typedocplugin",
+    "typedoc-report",
+    "type-coverage-plugin",
+    "typedoc-coverage-report"
+  ],
+  "bugs": {
+    "url": "https://github.com/ShareChat/typedoc-type-coverage-plugin/issues"
+  },
   "scripts": {
     "build": "tsc"
   },
   "peerDependencies": {
     "typedoc": "0.20.16"
   },
-  "keywords": [
-    "typedocplugin"
-  ],
   "devDependencies": {
     "@testing-library/react": "^13.3.0",
     "@types/jest": "^28.1.1",
