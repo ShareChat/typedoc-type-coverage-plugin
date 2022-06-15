@@ -56,7 +56,7 @@ export function load(app: Application) {
   app.renderer.on(Renderer.EVENT_END, async (event: RendererEvent) => {
     try {
       let outDir =
-        app.options.getValue("out") || path.join(process.cwd(), "doc");
+        app.options.getValue("out") || path.join(process.cwd(), "docs");
       outDir = path.join(outDir, "type-coverage");
       const threshold = app.options.getValue("threshold") as unknown as number;
       await generateCoverageReport({
