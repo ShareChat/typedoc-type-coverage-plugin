@@ -33,7 +33,7 @@ async function generateCoverageReport(
 
   console.log(generateText(data, options?.threshold || 0));
 
-  generateCoverageBadge(dirPath, data.percentage.toFixed(2));
+  generateCoverageBadge(dirPath, data.percentage.toFixed(1));
   await generateHTML(data, options);
   await asyncNcp(
     path.join(__dirname, "../assets"),
