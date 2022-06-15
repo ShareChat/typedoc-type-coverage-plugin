@@ -11,6 +11,8 @@ This plugin will create a `type-coverage` directory inside your output directory
 
 <img width="596" alt="image" src="https://user-images.githubusercontent.com/100559209/173741931-d6c1ca17-8f35-45e9-b637-1d0810c576a2.png">
 <img width="1454" alt="image" src="https://user-images.githubusercontent.com/100559209/173743128-79464483-017d-4462-8674-3b55091fc043.png">
+<img width="610" alt="image" src="https://user-images.githubusercontent.com/100559209/173752580-b46cc92c-3f64-4924-b2ab-5c323cbc1573.png">
+
 
 
 
