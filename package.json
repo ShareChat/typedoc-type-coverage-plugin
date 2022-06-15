@@ -1,6 +1,6 @@
 {
   "name": "@mohalla-tech/typedoc-type-coverage-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A plugin for TypeDoc to generate type coverage report and type coverage badge.",
   "homepage": "https://github.com/ShareChat/typedoc-type-coverage-plugin",
   "main": "dist/index.js",
