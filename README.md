@@ -11,7 +11,7 @@ This plugin will create a `type-coverage` directory inside your output directory
 
 ```bash
 
-  yarn add -D typedoc-type-coverage-plugin
+  yarn add -D @mohalla-tech/typedoc-type-coverage-plugin
 
 ```
 
