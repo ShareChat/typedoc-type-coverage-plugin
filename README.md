@@ -7,6 +7,14 @@ A plugin for TypeDoc to generate type coverage report and type coverage badge.
 This plugin will create a `type-coverage` directory inside your output directory when generating HTML documentation using typedoc.
 `type-coverage` directory includes the detailed type coverage report and it will also create a badge `type-coverage.svg` when you run the typedoc.
 
+## install
+
+```bash
+
+  yarn add -D typedoc-type-coverage-plugin
+
+```
+
 ## Screenshots
 
 <img width="596" alt="image" src="https://user-images.githubusercontent.com/100559209/173741931-d6c1ca17-8f35-45e9-b637-1d0810c576a2.png">
